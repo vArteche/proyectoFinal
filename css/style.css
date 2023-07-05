@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+div .grid{
+    background-image: url(../assets/img/background.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+body{
+    background-image: url(../assets/img/background.png);
+    color:#003432;
+    font-family: 'Playfair Display', serif;
+}
+section, main, footer, header{
+    background-color: rgba(255, 255, 255, 0.651);
+    /* margin:20px; */
+    font-size: 1rem;
+    /* border-radius: 15px; */
+    overflow: hidden;
+    
+}
+section, main{
+    margin: 1.25rem 0px;
+}
+nav{
+    margin:.625rem;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+
+
+}
+header{
+    grid-area: header;
+    /* background-color: white; */
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 9.375rem;
+}
+h1{
+    font-size: 2rem;
+    display: flex;
+    align-self:flex-end;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 31.25rem;
+    width: 100%;
+    
+}
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    row-gap: 1.875rem;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.index_main{
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/img/accesoriosmascotas.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    height: 31.25rem;
+}
+.index_main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .9375rem;
+    font-size: 1.5625rem;
+
+}
+
+ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: .4375rem;
+}
+ul li a {
+    text-decoration:none;
+    list-style:none;
+    color: #003432;
+    margin: .625rem;
+    display: flex;
+    align-items: baseline;
+}
+footer div ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.icon{
+    height: .9375rem;
+}
+.section_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 500px;
+    margin: 30px;
+    background-color: white;
+}
+.card h2{
+    font-size: 1.25rem;
+}
+.categorias {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boton a{
+    background-color: #003432;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5625rem;
+}
+.boton{
+    background-color: #003432;
+    color: white;
+    text-decoration: none;
+}
+main{
+    grid-area: main;
+}
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .625rem;
+}
+.nosotros div{
+    display: flex;
+    column-gap: .625rem;
+}
+.grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "header header header header header header"
+    ". main main main main ."
+    ". main main main main ."
+    ". main main main main ."
+    "footer footer footer footer footer footer"    
+    ;
+}
