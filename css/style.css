@@ -108,6 +108,10 @@ ul li a {
     display: flex;
     align-items: baseline;
 }
+ul li a:hover{
+    color: blueviolet;
+    font-size: 1.25rem;
+}
 footer div ul{
     display: flex;
 }
@@ -123,9 +127,15 @@ li{
     justify-content: center;
 }
 .card{
-    height: 31.25rem;
+    height: 21.875rem;
     margin: 30px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    height: 15.625rem;
 }
 .card h2{
     font-size: 1.25rem;
@@ -145,6 +155,19 @@ li{
     background-color: #003432;
     color: white;
     text-decoration: none;
+    padding: .1875rem;
+}
+.boton:hover{
+    background-color: blueviolet;
+    font-size: 1.25rem;
+    border-radius: .375rem;
+    
+}
+.boton a:hover{
+    background-color: blueviolet;
+    font-size: 1.875rem;
+    border-radius: .375rem;
+    
 }
 main{
     grid-area: main;
@@ -174,6 +197,7 @@ main{
     ;
 }
 
+/* INICIO DE MEDIA QUERIES */
 @media(max-width: 768px){
     header img{
         display: none;
@@ -184,5 +208,62 @@ main{
     }
     .categorias span{
         font-size: .9375rem;
+    }
+    footer{
+        display:flex;
+        justify-content: space-between;
+    }
+    footer div span{
+        display: none;
+    }
+    footer div ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{
+        color:#003432;
+    }
+    .logo{
+        display: none;
+    }
+    footer span{
+        font-size: .625rem;
+        margin-right: .3125rem;
+    }
+}
+@media(max-width:425px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .index_main div{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .index_main{
+        margin: .3125rem 0px;
+    
+    }
+    footer{
+        display:flex;
+        justify-content: space-between;
+    }
+    footer div span{
+        display: none;
+    }
+    footer div ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{
+        color:#003432;
+    }
+    .logo{
+        display: none;
+    }
+    footer span{
+        font-size: .625rem;
+        margin-right: .3125rem;
     }
 }
