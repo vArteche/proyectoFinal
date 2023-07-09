@@ -109,7 +109,7 @@ ul li a {
     align-items: baseline;
 }
 ul li a:hover{
-    color: blueviolet;
+    color: rgb(255, 166, 0);
     font-size: 1.25rem;
 }
 footer div ul{
@@ -157,14 +157,18 @@ li{
     text-decoration: none;
     padding: .1875rem;
 }
+input:focus{
+    background-color: #003432;
+    color: white;
+}
 .boton:hover{
-    background-color: blueviolet;
+    background-color: rgb(255, 166, 0);
     font-size: 1.25rem;
     border-radius: .375rem;
     
 }
 .boton a:hover{
-    background-color: blueviolet;
+    background-color:rgb(255, 166, 0);
     font-size: 1.875rem;
     border-radius: .375rem;
     
