@@ -18,7 +18,6 @@ header{
     grid-area: header;
     font-size: 1rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     column-gap: 9.375rem;
@@ -38,7 +37,6 @@ section{
 main{
     background-color: rgba(255, 255, 255, 0.651);
     font-size: 1rem;
-    // overflow: hidden;
     margin: 1.25rem 0px;
     grid-area: main;
 }
@@ -89,9 +87,6 @@ form{
 .index_main{
     div{
         height: 100%;
-        img{
-            height: 38.125rem;
-        }
         span{
             display: flex;
             align-items: flex-end;
@@ -154,6 +149,7 @@ ul{
 .boton{
     background-color: #003432;
     color: white;
+    border-radius: .375rem;
     text-decoration: none;
     padding: .1875rem;
     transition: all, 0.7s;
@@ -175,12 +171,16 @@ ul{
             border-radius: .375rem;
         }
 }
-.nosotros{
+main .nosotros{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: .625rem;
+    p{
+    margin-left: .625rem;
+    margin-right: .625rem;
+    }
         div{
             display: flex;
             column-gap: .625rem;
@@ -229,7 +229,12 @@ ul{
         img{
             display: none;
         }
-    } 
+    }
+    footer{
+        img{
+            display: none;
+        }
+    }
     .categorias{
         span{
             font-size: .9375rem;
@@ -274,8 +279,10 @@ ul{
         flex-direction: column;
         justify-content: center;
     }
+    main{
+        margin: 0;
+    }
     .index_main{
-        margin: .3125rem 0px;
         div{
             width: 100%;
             font-size: 1rem;
@@ -291,7 +298,9 @@ ul{
         div{
             span{
                 display: none;
-
+            }
+            img{
+                display: none;
             }
             ul{
                 li{
