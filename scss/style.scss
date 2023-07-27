@@ -1,5 +1,7 @@
+$background-principal: rgba(255, 255, 255, 0.651);
+$element-hover: rgb(255, 166, 0);
+$dark-background:#003432;
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
 *{
     margin:0;
     padding: 0;
@@ -11,7 +13,7 @@ body{
     font-family: 'Playfair Display', serif;
 }
 header{
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: $background-principal;
     font-size: 1rem;
     overflow: hidden;
     margin: 0px 0px 1.25rem 0px;
@@ -29,19 +31,19 @@ header{
     }
 }
 section{
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: $background-principal;
     font-size: 1rem;
     overflow: hidden;
     margin: 1.25rem 0px;
 }
 main{
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: $background-principal;
     font-size: 1rem;
     margin: 1.25rem 0px;
     grid-area: main;
 }
 footer{
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: $background-principal;
     font-size: 1rem;
     overflow: hidden;
     margin: 1.25rem 0px;
@@ -107,14 +109,14 @@ ul{
             a{
                 text-decoration:none;
                 list-style:none;
-                color: #003432;
+                color:$dark-background;
                 margin: .625rem;
                 display: flex;
                 align-items: baseline;
                 transform: all, 0.7s;
                     &:hover{
                     transform:scale(1.05);
-                    color: rgb(255, 166, 0);
+                    color:$element-hover;
                     }
             }
         };
@@ -147,26 +149,26 @@ ul{
     justify-content: space-evenly;
 }
 .boton{
-    background-color: #003432;
+    background-color: $dark-background;
     color: white;
     border-radius: .375rem;
     text-decoration: none;
     padding: .1875rem;
     transition: all, 0.7s;
         a{
-            background-color: #003432;
+            background-color: $dark-background;
             color: white;
             text-decoration: none;
             font-size: 1.5625rem;
             transition: all, 0.7s;
                 &:hover{
-                    background-color:rgb(255, 166, 0);
+                    background-color:$element-hover;
                     transform: scale(1.05);
                     border-radius: .375rem;
                 }
         }
         &:hover{
-            background-color:rgb(255, 166, 0);
+            background-color:$element-hover;
             transform: scale(1.05);
             border-radius: .375rem;
         }
@@ -264,7 +266,7 @@ main .nosotros{
         }
     }
     .icon{
-        color:#003432;
+        color:$dark-background;
     }
 }
 @media(max-width:657px){
@@ -311,7 +313,7 @@ main .nosotros{
         }
     }
     .icon{
-        color:#003432;
+        color:$dark-background;
     }
     .logo{
         display: none;
