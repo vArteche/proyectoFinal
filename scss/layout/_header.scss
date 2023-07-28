@@ -1,0 +1,18 @@
+header{
+    background-color: $background-principal;
+    font-size: 1rem;
+    overflow: hidden;
+    margin: 0px 0px 1.25rem 0px;
+    grid-area: header;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 9.375rem;
+    nav{
+        margin:.625rem;
+        grid-area: nav;
+        display: flex;
+        justify-content: center;
+    }
+}

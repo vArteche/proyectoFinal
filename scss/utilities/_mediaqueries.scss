@@ -1,0 +1,118 @@
+/* INICIO DE MEDIA QUERIES */
+@media(max-width:971px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        img{
+            height: 9.375rem;
+            width: 9.375rem;
+        }
+    }
+}
+@media(max-width:913px){
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        img{
+            height: 9.375rem;
+            width: 9.375rem;
+        }
+    }
+
+}
+@media(max-width: 768px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        img{
+            display: none;
+        }
+    }
+    footer{
+        img{
+            display: none;
+        }
+    }
+    .categorias{
+        span{
+            font-size: .9375rem;
+        }
+        a{
+            img{ 
+                height: 3.125rem;
+                width: 3.125rema;
+            }
+        }
+    }
+    footer{
+        display:flex;
+        justify-content: space-between;
+        div{
+            span{
+                display: none;
+                font-size: .625rem;
+                margin-right: .3125rem;
+            }
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .icon{
+        color:$dark-background;
+    }
+}
+@media(max-width:657px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:425px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        margin: 0;
+    }
+    .index_main{
+        div{
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+    footer{
+        display:flex;
+        justify-content: space-between;
+        span{
+            font-size: .625rem;
+            margin-right: .3125rem;
+        }
+        div{
+            span{
+                display: none;
+            }
+            img{
+                display: none;
+            }
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .icon{
+        color:$dark-background;
+    }
+    .logo{
+        display: none;
+    }
+}

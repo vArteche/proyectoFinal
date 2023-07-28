@@ -1,0 +1,25 @@
+.boton{
+    background-color: $dark-background;
+    color: white;
+    border-radius: .375rem;
+    text-decoration: none;
+    padding: .1875rem;
+    transition: all, 0.7s;
+        a{
+            background-color: $dark-background;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5625rem;
+            transition: all, 0.7s;
+                &:hover{
+                    background-color:$element-hover;
+                    transform:$hovertrans;
+                    border-radius: .375rem;
+                }
+        }
+        &:hover{
+            background-color:$element-hover;
+            transform: $hovertrans;
+            border-radius: .375rem;
+        }
+}

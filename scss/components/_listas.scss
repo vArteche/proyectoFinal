@@ -1,0 +1,22 @@
+ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: .4375rem;
+        li{
+            list-style: none;
+            a{
+                text-decoration:none;
+                list-style:none;
+                color:$dark-background;
+                margin: .625rem;
+                display: flex;
+                align-items: baseline;
+                transform: all, 0.7s;
+                    &:hover{
+                    transform:$hovertrans;
+                    color:$element-hover;
+                    }
+            }
+        };
+}

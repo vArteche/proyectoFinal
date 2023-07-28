@@ -1,0 +1,21 @@
+.grid{
+    background-image: url(../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+
+.grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "header header header header header header"
+    ". main main main main ."
+    ". main main main main ."
+    ". main main main main ."
+    "footer footer footer footer footer footer"    
+    ;
+}
