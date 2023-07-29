@@ -2,3 +2,8 @@ $background-principal: rgba(255, 255, 255, 0.651);
 $element-hover: rgb(255, 166, 0);
 $dark-background:#003432;
 $hovertrans: scale(1.05);
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+};

@@ -1,13 +1,10 @@
 form{
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;
     align-items: center;
-    justify-content: center;
     height: 31.25rem;
     width: 100%;
         fieldset{
-            display: flex;
-            flex-direction: column;
+            @extend form;
             align-items: center;
             margin: 1.25rem;
             padding: 1.25rem;

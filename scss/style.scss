@@ -28,11 +28,9 @@ section{
     height: 21.875rem;
     margin: 30px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
         img{
-            height: 15.625rem;
+            height: 18.75rem;
         }
         h2{
             font-size: 1.25rem;

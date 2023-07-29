@@ -139,7 +139,6 @@ header {
   overflow: hidden;
   margin: 0px 0px 1.25rem 0px;
   grid-area: header;
-  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,32 +158,14 @@ main {
   grid-area: main;
 }
 
-.index_main div {
-  height: 100%;
-}
-.index_main div span {
-  display: flex;
-  align-items: flex-end;
-}
-.index_main div .carousel-indicators {
-  display: flex;
-  align-items: flex-end;
-}
-
-main .nosotros {
+.nosotros {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  row-gap: 0.625rem;
-}
-main .nosotros p {
-  margin-left: 0.625rem;
-  margin-right: 0.625rem;
-}
-main .nosotros div {
-  display: flex;
-  column-gap: 0.625rem;
+  margin: 18.75rem;
+  align-items: center;
+  row-gap: 1.25rem;
+  flex-direction: row;
 }
 
 footer {
@@ -202,37 +183,15 @@ footer div ul {
   display: flex;
 }
 
-.boton {
-  background-color: #003432;
-  color: white;
-  border-radius: 0.375rem;
-  text-decoration: none;
-  padding: 0.1875rem;
-  transition: all, 0.7s;
-}
-.boton a {
-  background-color: #003432;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5625rem;
-  transition: all, 0.7s;
-}
-.boton a:hover {
-  background-color: rgb(255, 166, 0);
-  transform: scale(1.05);
-  border-radius: 0.375rem;
-}
-form {
+form, form fieldset {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 31.25rem;
   width: 100%;
 }
 form fieldset {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 1.25rem;
   padding: 1.25rem;
@@ -262,6 +221,32 @@ ul li a:hover {
   color: rgb(255, 166, 0);
 }
 
+.boton {
+  background-color: #003432;
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  padding: 0.1875rem;
+  transition: all, 0.7s;
+}
+.boton a {
+  background-color: #003432;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5625rem;
+  transition: all, 0.7s;
+}
+.boton a:hover {
+  background-color: rgb(255, 166, 0);
+  transform: scale(1.05);
+  border-radius: 0.375rem;
+}
+.boton:hover {
+  background-color: rgb(255, 166, 0);
+  transform: scale(1.05);
+  border-radius: 0.375rem;
+}
+
 section {
   background-color: rgba(255, 255, 255, 0.651);
   font-size: 1rem;
@@ -285,10 +270,10 @@ section {
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 .card img {
-  height: 15.625rem;
+  height: 18.75rem;
 }
 .card h2 {
   font-size: 1.25rem;
