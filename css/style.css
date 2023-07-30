@@ -130,7 +130,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "header header header header header header" ". main main main main ." ". main main main main ." ". main main main main ." "footer footer footer footer footer footer";
+  grid-template-areas: "header header header header header header" "main main main main main main" "main main main main main main" "main main main main main main" "footer footer footer footer footer footer";
 }
 
 header {
@@ -159,13 +159,19 @@ main {
 }
 
 .nosotros {
+  column-gap: 0.625rem;
+}
+.nosotros article {
+  margin-top: 6.25rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 18.75rem;
-  align-items: center;
-  row-gap: 1.25rem;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nosotros article div {
+  width: 43.75rem;
+}
+.nosotros div {
+  text-align: center;
 }
 
 footer {
@@ -263,19 +269,18 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.card {
-  height: 21.875rem;
+.section_cards .carta {
+  height: 100%;
   margin: 30px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.card img {
+.section_cards .carta img {
   height: 18.75rem;
+  border-radius: 0.625rem;
 }
-.card h2 {
+.section_cards .carta h2 {
   font-size: 1.25rem;
 }
 
@@ -283,6 +288,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.categorias span a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

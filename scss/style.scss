@@ -23,21 +23,31 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+        .carta{
+        height: 100%;
+        margin: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+            img{
+                height: 18.75rem;
+                border-radius: .625rem;
+            }
+            h2{
+                font-size: 1.25rem;
+            }
+    }
 }
-.card{
-    height: 21.875rem;
-    margin: 30px;
-    background-color: white;
-    @include flex-column-center;
-        img{
-            height: 18.75rem;
-        }
-        h2{
-            font-size: 1.25rem;
-        }
-}
+
 .categorias {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    span{
+        a{
+            text-decoration: none;
+        }
+        
+    }
 }

@@ -4,10 +4,19 @@ main{
     margin: 1.25rem 0px;
     grid-area: main;
 }
-.nosotros {
-    @include flex-column-center;
-    margin: 18.75rem;
-    align-items: center;
-    row-gap: 1.25rem;
-    flex-direction: row;
+
+.nosotros{
+    column-gap: .625rem;
+    article{
+        margin-top: 6.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        div{
+            width: 43.75rem;
+        }
+    }
+    div{
+        text-align: center;
+    }
 }
