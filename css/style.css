@@ -158,6 +158,29 @@ main {
   grid-area: main;
 }
 
+.index_main {
+  display: flex;
+  flex-direction: column;
+}
+.index_main section div {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index_main section div:hover {
+  background-color: rgb(248, 131, 89);
+  color: rgb(255, 166, 0);
+  transform: scale(1.05);
+  scale: 1, 7;
+}
+.index_main section div a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #003432;
+}
+
 .nosotros {
   column-gap: 0.625rem;
 }
